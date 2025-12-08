@@ -1,12 +1,10 @@
 <script setup lang="ts">
 definePage({
-  type: 'home',
+  layout: 'home',
 })
 </script>
 
 <template>
-  <AppLogos />
-  <InputEntry />
   <wd-button>主要按钮</wd-button>
 </template>
 
