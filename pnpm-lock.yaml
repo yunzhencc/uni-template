@@ -59,9 +59,15 @@ importers:
       '@dcloudio/uni-quickapp-webview':
         specifier: 3.0.0-4070520250711001
         version: 3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.21(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vue@3.4.21(typescript@5.8.3))
+      '@uni-helper/axios-adapter':
+        specifier: ^1.5.2
+        version: 1.5.2(axios@1.13.2)
       '@vueuse/core':
         specifier: 13.5.0
         version: 13.5.0(vue@3.4.21(typescript@5.8.3))
+      '@yunzhen/request':
+        specifier: ^1.0.0
+        version: 1.0.0
       echarts:
         specifier: ^6.0.0
         version: 6.0.0
@@ -2235,6 +2241,11 @@ packages:
     resolution: {integrity: sha512-BmxxndzEWhE4TIEEMBs8lP3MBWN3jFPs/p6gPm/wkv02o41hI6cq9AuSmGAaTTHPtA1FTi2jBre4A9rm5ZmX+Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@uni-helper/axios-adapter@1.5.2':
+    resolution: {integrity: sha512-0NUHqVpC2a2KoT855csKhA2nV5bhGtIW9SUSyfZ248PmAsRsrnRjzygEeR/1IDGM6cbHdyAFGAdPtA/mwgC6Dg==}
+    peerDependencies:
+      axios: ^1.5.0
+
   '@uni-helper/plugin-uni@0.1.0':
     resolution: {integrity: sha512-hBPUjoQc/SgqKsyGUl0fJiL+dDwLPhf2es1PJdsXcxHyOujoBP2+D4z5ie+Q72wVwKtTsQSP3tSjww/63JRmbA==}
     peerDependencies:
@@ -2625,6 +2636,9 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
+  '@yunzhen/request@1.0.0':
+    resolution: {integrity: sha512-AundttamN39T3T/9xNNhWqq/oWcM1nKzB9Uz7Sha5ztp6izbwW5Xy2fXGGALovIavUc2v5cu9ZF69N9TLv2BbA==}
+
   JSONStream@1.3.5:
     resolution: {integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==}
     hasBin: true
@@ -2765,6 +2779,9 @@ packages:
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
+
+  axios@1.13.2:
+    resolution: {integrity: sha512-VPk9ebNqPcy5lRGuSlKx752IlDatOjT9paPlm8A7yOuW2Fbvp4X3JznJtT4f0GzGLLiWE9W8onz51SqLYwzGaA==}
 
   babel-jest@27.5.1:
     resolution: {integrity: sha512-cdQ5dXjGRd0IBRATiQ4mZGlGlRE8kJpjPOixdNRdT+m3UcNqmYWN6rK6nvtXYfY3D76cb8s/O1Ss8ea24PIwcg==}
@@ -3422,6 +3439,9 @@ packages:
     resolution: {integrity: sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==}
     engines: {node: '>= 0.4'}
 
+  es-toolkit@1.42.0:
+    resolution: {integrity: sha512-SLHIyY7VfDJBM8clz4+T2oquwTQxEzu263AyhVK4jREOAwJ+8eebaa4wM3nlvnAqhDrMm2EsA6hWHaQsMPQ1nA==}
+
   esbuild@0.20.2:
     resolution: {integrity: sha512-WdOOppmUNU+IbZ0PaDiTst80zjnrOkyJNHoKupIcVyU8Lvla3Ugx94VzkQ32Ijqd7UhHJy75gNWDMUekcrSJ6g==}
     engines: {node: '>=12'}
@@ -3784,6 +3804,10 @@ packages:
 
   form-data@3.0.4:
     resolution: {integrity: sha512-f0cRzm6dkyVYV3nPoooP8XlccPQukegwhAnpoLcXy+X+A8KfpGOoXwDr9FLZd3wzgLaBGQBE3lY93Zm/i1JvIQ==}
+    engines: {node: '>= 6'}
+
+  form-data@4.0.5:
+    resolution: {integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==}
     engines: {node: '>= 6'}
 
   format@0.2.2:
@@ -5204,6 +5228,9 @@ packages:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
 
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+
   psl@1.15.0:
     resolution: {integrity: sha512-JZd3gMVBAVQkSs6HdNZo9Sdo0LNcQeMNP3CozBJb3JYC/QUYZTnKxP+f8oWRX4rHP5EurWxqAHTSwUCjlNKa1w==}
 
@@ -5220,6 +5247,10 @@ packages:
 
   qs@6.13.0:
     resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
+    engines: {node: '>=0.6'}
+
+  qs@6.14.0:
+    resolution: {integrity: sha512-YWWTjgABSKcvs/nWBi9PycY/JiPJqOD4JA6o9Sej2AtvSGarXxKC3OQSk4pAarbdQlKAh5D4FCQkJNkW+GAn3w==}
     engines: {node: '>=0.6'}
 
   quansync@0.2.10:
@@ -7054,7 +7085,7 @@ snapshots:
       '@babel/parser': 7.28.3
       '@babel/template': 7.27.2
       '@babel/types': 7.28.2
-      debug: 4.4.1
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
@@ -9249,6 +9280,12 @@ snapshots:
       '@typescript-eslint/types': 8.48.1
       eslint-visitor-keys: 4.2.1
 
+  '@uni-helper/axios-adapter@1.5.2(axios@1.13.2)':
+    dependencies:
+      axios: 1.13.2
+      local-pkg: 0.4.3
+      unplugin: 1.16.1
+
   '@uni-helper/plugin-uni@0.1.0(@dcloudio/vite-plugin-uni@3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.21(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vite@5.2.8(@types/node@24.1.0)(sass@1.78.0)(terser@5.37.0))(vue@3.4.21(typescript@5.8.3)))':
     dependencies:
       '@dcloudio/vite-plugin-uni': 3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.21(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vite@5.2.8(@types/node@24.1.0)(sass@1.78.0)(terser@5.37.0))(vue@3.4.21(typescript@5.8.3))
@@ -9644,7 +9681,7 @@ snapshots:
       chokidar: 3.6.0
       magic-string: 0.30.18
       pathe: 2.0.3
-      tinyglobby: 0.2.14
+      tinyglobby: 0.2.15
       unplugin-utils: 0.3.0
       vite: 5.2.8(@types/node@24.1.0)(sass@1.78.0)(terser@5.37.0)
     optional: true
@@ -9876,6 +9913,14 @@ snapshots:
     dependencies:
       vue: 3.4.21(typescript@5.8.3)
 
+  '@yunzhen/request@1.0.0':
+    dependencies:
+      axios: 1.13.2
+      es-toolkit: 1.42.0
+      qs: 6.14.0
+    transitivePeerDependencies:
+      - debug
+
   JSONStream@1.3.5:
     dependencies:
       jsonparse: 1.3.1
@@ -9913,7 +9958,7 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
@@ -10000,6 +10045,14 @@ snapshots:
       picocolors: 1.1.1
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
+
+  axios@1.13.2:
+    dependencies:
+      follow-redirects: 1.15.9
+      form-data: 4.0.5
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
 
   babel-jest@27.5.1(@babel/core@7.26.0):
     dependencies:
@@ -10628,6 +10681,8 @@ snapshots:
       has-tostringtag: 1.0.2
       hasown: 2.0.2
 
+  es-toolkit@1.42.0: {}
+
   esbuild@0.20.2:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.20.2
@@ -11122,6 +11177,14 @@ snapshots:
       hasown: 2.0.2
       mime-types: 2.1.35
 
+  form-data@4.0.5:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
+      mime-types: 2.1.35
+
   format@0.2.2: {}
 
   forwarded@0.2.0: {}
@@ -11302,14 +11365,14 @@ snapshots:
     dependencies:
       '@tootallnate/once': 1.1.2
       agent-base: 6.0.2
-      debug: 4.4.1
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.4.1
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
@@ -11440,7 +11503,7 @@ snapshots:
 
   istanbul-lib-source-maps@4.0.1:
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.3
       istanbul-lib-coverage: 3.2.2
       source-map: 0.6.1
     transitivePeerDependencies:
@@ -11758,7 +11821,7 @@ snapshots:
       jest-util: 27.5.1
       natural-compare: 1.4.0
       pretty-format: 27.5.1
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
 
@@ -12062,7 +12125,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   makeerror@1.0.12:
     dependencies:
@@ -12878,6 +12941,8 @@ snapshots:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
 
+  proxy-from-env@1.1.0: {}
+
   psl@1.15.0:
     dependencies:
       punycode: 2.3.1
@@ -12889,6 +12954,10 @@ snapshots:
   qrcode-terminal@0.12.0: {}
 
   qs@6.13.0:
+    dependencies:
+      side-channel: 1.1.0
+
+  qs@6.14.0:
     dependencies:
       side-channel: 1.1.0
 
