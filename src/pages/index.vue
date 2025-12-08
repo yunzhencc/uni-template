@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePage({
-  layout: 'home',
+  type: 'home',
 })
 </script>
 
