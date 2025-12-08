@@ -32,13 +32,14 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-4070520250711001",
     "@dcloudio/uni-mp-xhs": "3.0.0-4070520250711001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4070520250711001",
-    "@vueuse/core": "^13.5.0",
-    "pinia": "^3.0.4",
-    "pinia-plugin-persistedstate": "^4.7.1",
+    "@vueuse/core": "13.5.0",
+    "pinia": "3.0.4",
+    "pinia-plugin-persistedstate": "4.7.1",
     "vue": "3.4.21",
-    "vue-i18n": "^9.14.5",
+    "vue-i18n": "9.14.5",
     "vue-router": "4.5.1",
-    "wot-design-uni": "^1.13.0"
+    "wot-design-uni": "1.13.0",
+    "z-paging": "2.8.8"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.16",
