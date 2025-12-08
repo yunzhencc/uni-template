@@ -8,6 +8,7 @@
     },
     "types": [
       "@dcloudio/types",
+      "wot-design-uni/global",
       "@mini-types/alipay",
       "miniprogram-api-typings",
       "@uni-helper/uni-types",
