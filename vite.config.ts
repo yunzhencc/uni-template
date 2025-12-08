@@ -4,6 +4,9 @@ import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniHelperPages from '@uni-helper/vite-plugin-uni-pages'
+import UniKuRoot from '@uni-ku/root'
+import { UniEchartsResolver } from 'uni-echarts/resolver'
+import { UniEcharts } from 'uni-echarts/vite'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
@@ -17,10 +20,15 @@ export default defineConfig({
     }),
     UniHelperLayouts(),
     UniHelperComponents({
-      resolvers: [WotResolver()],
+      resolvers: [
+        WotResolver(),
+        UniEchartsResolver(),
+      ],
       dts: 'src/types/auto/components.d.ts',
       directoryAsNamespace: true,
     }),
+    UniKuRoot(),
+    UniEcharts(),
     Uni(),
     UniPolyfill(),
     AutoImport({
