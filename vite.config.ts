@@ -4,6 +4,7 @@ import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniHelperPages from '@uni-helper/vite-plugin-uni-pages'
+import Optimization from '@uni-ku/bundle-optimizer'
 import UniKuRoot from '@uni-ku/root'
 import { UniEchartsResolver } from 'uni-echarts/resolver'
 import { UniEcharts } from 'uni-echarts/vite'
@@ -31,6 +32,17 @@ export default defineConfig({
     UniEcharts(),
     Uni(),
     UniPolyfill(),
+    Optimization({
+      logger: false,
+      dts: {
+        'async-import': {
+          path: 'src/types/auto/async-import.d.ts',
+        },
+        'async-component': {
+          path: 'src/types/auto/async-component.d.ts',
+        },
+      },
+    }),
     AutoImport({
       imports: ['vue', '@vueuse/core', 'uni-app'],
       dts: 'src/types/auto/auto-imports.d.ts',
